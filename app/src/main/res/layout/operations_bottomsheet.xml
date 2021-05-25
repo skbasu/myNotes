@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/optionsBottomSheetContainer"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bottom_bg"
+    android:orientation="vertical">
+
+    <View
+        android:layout_marginTop="20dp"
+        android:layout_width="80dp"
+        android:layout_height="5dp"
+        android:background="@drawable/view_bg"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:id="@+id/copyOption"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/copy_icon"
+            app:tint="@color/black"/>
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/copy_text"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/shareOption"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/share_icon"
+            app:tint="@color/black"/>
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/share"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/editOption"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/edit_icon"
+            app:tint="@color/black"/>
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_note"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/deleteOption"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginStart="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/delete_icon"
+            app:tint="@color/black"/>
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delete_note"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
