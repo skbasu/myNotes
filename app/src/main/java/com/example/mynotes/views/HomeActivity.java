@@ -99,19 +99,11 @@ public class HomeActivity extends AppCompatActivity {
                 Note note = new Note(title, description, noteDate);
                 noteViewModel.insert(note);
                 addNoteDialog.dismiss();
-                showInsertedToast();
+                Toast insertedToast = Toast.makeText(v.getContext(), "New Note Inserted", Toast.LENGTH_SHORT);
+                insertedToast.setGravity(Gravity.CENTER, 0, 0);
+                insertedToast.show();
             }
         });
         addNoteDialog.show();
-    }
-
-    public void showInsertedToast() {
-        LayoutInflater inflater = getLayoutInflater();
-        View insertToastLayout = inflater.inflate(R.layout.inserted_toast, (ViewGroup) findViewById(R.id.insertToastRoot));
-        Toast insertedToast = new Toast(getApplicationContext());
-        insertedToast.setGravity(Gravity.CENTER, 0, 0);
-        insertedToast.setDuration(Toast.LENGTH_LONG);
-        insertedToast.setView(insertToastLayout);
-        insertedToast.show();
     }
 }

@@ -14,8 +14,8 @@
         <ImageView
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
             android:src="@drawable/notes" />
 
         <LinearLayout
@@ -32,7 +32,7 @@
                 android:fontFamily="@font/noto_sans"
                 android:text="@string/note_title"
                 android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -41,7 +41,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/note_date"
                 android:fontFamily="@font/noto_sans"
-                android:textSize="16sp" />
+                android:textSize="14sp" />
 
         </LinearLayout>
 
@@ -67,20 +67,20 @@
             android:orientation="horizontal">
 
             <TextView
-                android:layout_marginStart="20dp"
+                android:layout_marginStart="15dp"
                 android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/note_description"
                 android:textStyle="bold"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:fontFamily="@font/noto_sans"
                 android:textColor="@color/black"/>
 
             <ImageView
                 android:padding="10dp"
                 android:id="@+id/operationsBtn"
-                android:layout_marginStart="130dp"
+                android:layout_marginStart="140dp"
                 android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -91,8 +91,7 @@
 
         <TextView
             android:id="@+id/noteDescription"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="20dp"
             android:layout_width="match_parent"
@@ -100,7 +99,7 @@
             android:fontFamily="@font/noto_sans"
             android:text="@string/complete_description"
             android:textColor="@color/black"
-            android:textSize="18sp"/>
+            android:textSize="16sp"/>
 
     </LinearLayout>
     <View
